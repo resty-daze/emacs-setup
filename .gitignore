@@ -1,0 +1,3 @@
+*.elc
+plugin/auto-complete
+plugin/color-theme
