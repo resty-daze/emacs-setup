@@ -25,7 +25,7 @@
   "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist (cons "\\.md" 'markdown-mode))
 
-(mapcar 'load-file (directory-files "personal" 't "^[^#].*el$"))
+(mapcar 'load-file (directory-files (concat emacs-setup-path "/personal") 't "^[^#].*el$"))
 
 
 
