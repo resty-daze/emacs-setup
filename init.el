@@ -20,6 +20,11 @@
   ;(yas/global-mode 1)
   )
 
+
+(autoload 'markdown-mode (concat emacs-setup-path "/language-mode/markdown-mode.el")
+  "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist (cons "\\.md" 'markdown-mode))
+
 (mapcar 'load-file (directory-files "personal" 't "^[^#].*el$"))
 
 
