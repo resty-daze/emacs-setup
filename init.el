@@ -14,9 +14,14 @@
   (require-with-directory plugin-dir "auto-complete" 'auto-complete-config)
   (add-to-list 'ac-dictionary-directories 
                (concat plugin-dir "auto-complete/ac-dict"))
-  (ac-config-default))
+  (ac-config-default)
+  ;; yasnippet
+  (require-with-directory plugin-dir "yasnippet" 'yasnippet)
+  ;(yas/global-mode 1)
+  )
 
 (mapcar 'load-file (directory-files "personal" 't "^[^#].*el$"))
+
 
 
 
