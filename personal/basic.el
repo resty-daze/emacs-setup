@@ -8,6 +8,13 @@
 
 ;; gdb configure
 (setq gdb-non-stop-setting nil)
+
+; linum-mode
+(global-linum-mode)
+
+; ido-mode
+(ido-mode)
+
 ; dired
 (add-hook 'dired-load-hook 
           (lambda () 
