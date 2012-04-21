@@ -101,7 +101,7 @@
 (ido-only-match ((t (:foreground "#8F9D6A"))))
 (mumamo-background-chunk-submode ((t (:background "#222222"))))
 
-(linum ((t (:background "#141314" :foreground "#2D2B2E"))))
+(linum ((t (:background "#141314" :foreground "#7D7B7E"))))
 (hl-line ((t (:background "#212121"))))
           (region ((t (:background "#373446"))))
 (yas/field-highlight-face ((t (:background "#27292A"))))

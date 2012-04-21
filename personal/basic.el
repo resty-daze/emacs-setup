@@ -15,6 +15,9 @@
 ; ido-mode
 (ido-mode)
 
+; projectile
+(projectile-global-mode)
+
 ; dired
 (add-hook 'dired-load-hook 
           (lambda () 
