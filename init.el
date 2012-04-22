@@ -29,10 +29,23 @@
   )
 
 
-(autoload 'markdown-mode (concat emacs-setup-path "/language-mode/markdown-mode.el")
+(add-to-list 'load-path (concat emacs-setup-path "/language-mode"))
+;; Markdown-Mode
+(autoload 'markdown-mode "/language-mode/markdown-mode.el"
   "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist (cons "\\.md" 'markdown-mode))
 
+;; Yaml-Mode
+(autoload 'yaml-mode "yaml-mode.el"
+  "Major mode for editing Yaml files" t)
+(add-to-list 'auto-mode-alist (cons "\\.yml" 'yaml-mode))
+
+;; Lua-Mode
+(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
+(add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
+
+;; Load personal files
 (mapcar 'load-file (directory-files (concat emacs-setup-path "/personal") 't "^[^#].*el$"))
 
 
