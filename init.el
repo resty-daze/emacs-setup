@@ -31,7 +31,7 @@
 
 (add-to-list 'load-path (concat emacs-setup-path "/language-mode"))
 ;; Markdown-Mode
-(autoload 'markdown-mode "/language-mode/markdown-mode.el"
+(autoload 'markdown-mode "markdown-mode"
   "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist (cons "\\.md" 'markdown-mode))
 
@@ -44,6 +44,10 @@
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
+
+;; Javascript
+(autoload 'js2-mode "js2-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 ;; Load personal files
 (mapcar 'load-file (directory-files (concat emacs-setup-path "/personal") 't "^[^#].*el$"))
