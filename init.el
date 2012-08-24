@@ -28,6 +28,9 @@
   
   ;; psvn
   (require-with-directory plugin-dir "psvn" 'psvn)
+
+  ;; xcscope
+  (require-with-directory plugin-dir "xcscope" 'xcscope)
   )
 
 

@@ -14,8 +14,9 @@
   (byte-compile-file (concat work-dir 
                              "plugin/color-theme-twilight/color-theme-twilight.el"))
   (byte-compile-file (concat work-dir
-                              "plugin/psvn/psvn.el"))
-  
+                             "plugin/psvn/psvn.el"))
+  (byte-compile-file (concat work-dir
+                             "plugin/xcscope/xcscope.el"))
   (setq load-path old-load-path))
 
 ;; compile auto-complete
