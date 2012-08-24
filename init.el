@@ -26,6 +26,8 @@
   ;; projectile
   (require-with-directory plugin-dir "projectile" 'projectile)
   
+  ;; psvn
+  (require-with-directory plugin-dir "psvn" 'psvn)
   )
 
 
