@@ -54,6 +54,12 @@
 (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
+;; CMake
+(autoload 'cmake-mode "cmake-mode" "Major mode for editing CMake files" t)
+(add-to-list 'auto-mode-alist (cons "CMakeLists.txt" 'cmake-mode))
+(autoload 'cmake-font-lock-activate "cmake-font-lock" nil t)
+(add-hook 'cmake-mode-hook 'cmake-font-lock-activate)
+
 ;; Load personal files
 (mapcar 'load-file (directory-files (concat emacs-setup-path "/personal") 't "^[^#].*el$"))
 
