@@ -22,7 +22,7 @@
 ;; compile auto-complete
 (make-directory (concat work-dir "plugin/auto-complete"))
 (shell-command (concat "emacs -batch -l " 
-		       work-dir "src/auto-complete-1.3.1/etc/install.el "
+		       work-dir "src/auto-complete/etc/install.el "
 		       work-dir "plugin/auto-complete"))
 
 

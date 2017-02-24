@@ -57,6 +57,3 @@
 ;; Load personal files
 (mapcar 'load-file (directory-files (concat emacs-setup-path "/personal") 't "^[^#].*el$"))
 
-
-
-
