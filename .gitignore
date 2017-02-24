@@ -1,3 +1,4 @@
 *.elc
 plugin/auto-complete
 plugin/color-theme
+.DS_Store
