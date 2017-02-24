@@ -60,6 +60,10 @@
 (autoload 'cmake-font-lock-activate "cmake-font-lock" nil t)
 (add-hook 'cmake-mode-hook 'cmake-font-lock-activate)
 
+;; Modern C++ highlights
+(require 'modern-cpp-font-lock)
+(modern-c++-font-lock-global-mode t)
+
 ;; Load personal files
 (mapcar 'load-file (directory-files (concat emacs-setup-path "/personal") 't "^[^#].*el$"))
 
